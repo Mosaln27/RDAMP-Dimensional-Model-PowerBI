@@ -33,7 +33,8 @@ To transform cleaned transactional sales data into a structured star schema for 
 ---
 
 ## 🧱 Schema Diagram
-![Uploading schema_diagram.png…]()
+<img width="1024" height="1024" alt="schema_diagram" src="https://github.com/user-attachments/assets/b30e55e4-d40b-4d82-9cd2-98df71ef04a9" />
+
 
 ---
 
@@ -127,25 +128,25 @@ View: `vw_product_seasonality`
 
 
 ### 2. Discount vs Profit Analysis
-![Uploading DiscountVSProfit.png…]()
+<img width="959" height="539" alt="DiscountVSProfit" src="https://github.com/user-attachments/assets/1621d1b7-f3a6-461f-b375-1bf36e035d5e" />
 
 View: `vw_discount_impact_analysis`
 
 
 ### 3. Avg Order Value by Channel & Segment
-![Uploading ChannelProfitibilityOverview.png…]()
+<img width="959" height="539" alt="ChannelProfitibilityOverview" src="https://github.com/user-attachments/assets/bf408d3c-03d9-4a3d-a527-4174e62edae4" />
 
 View: `vw_customer_order_patterns`
 
 
 ### 4. Top 10 Customers by Profit
-![Uploading CustomerOrderBehaviour.png…]()
+<img width="959" height="539" alt="CustomerOrderBehaviour" src="https://github.com/user-attachments/assets/ef4c638f-d275-4777-88be-9accb6200c59" />
 
 View: `vw_customer_order_patterns`
 
 
 ### 5. Category Ranking by Region
-![Uploading CategoryRankingsbyRegion.png…]()
+<img width="959" height="539" alt="CategoryRankingsbyRegion" src="https://github.com/user-attachments/assets/f28f2d51-34d4-4f35-844e-b56e1161b719" />
 
 View: `vw_region_category_rankings`
 
