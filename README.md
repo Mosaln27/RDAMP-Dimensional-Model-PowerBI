@@ -1,2 +1,168 @@
 # RDAMP-Dimensional-Model-PowerBI
+# Dimensional Modeling & Power BI Reporting
+
 A dimensional modeling and Power BI reporting project for Ace Superstore, built as part of the Realcare Data Analytics Mentorship Program (RDAMP). Includes SQL Server star schema, analytical views, and an interactive dashboard for business insights.
+
+
+## Project Title
+
+**Ace Superstore: SQL Star Schema and BI Dashboard**
+
+---
+
+## Overview
+
+This project is part of the Realcare Data Analytics Mentorship Program (RDAMP). It focuses on building a dimensional model using SQL Server and creating an interactive Power BI dashboard using views from the model. The goal is to simulate a real-world enterprise data pipeline for reporting and decision-making.
+
+---
+
+## 💡 Objective
+
+To transform cleaned transactional sales data into a structured star schema for optimized querying, and to visualize strategic insights via Power BI.
+
+---
+
+## ✅ Key Deliverables
+
+* Star schema with 7 dimensions and 1 fact table
+* 5 SQL views to power strategic business insights
+* A fully interactive Power BI dashboard
+* GitHub project repository with organized structure
+* Dimensional schema diagram
+
+---
+
+## 🧱 Schema Diagram
+![Uploading schema_diagram.png…]()
+
+---
+
+## 📂 Folder Structure
+
+```
+RDAMP-Dimensional-Model-PowerBI/
+├── sql/
+│   ├── create_tables.sql
+│   ├── populate_dimensions.sql
+│   ├── populate_fact_table.sql
+│   ├── create_views.sql
+│   └── queries.sql
+├── powerbi/
+│   ├── Mosa_Dashboard.pbix
+│   └── screenshots/
+│       ├── seasonality_heatmap.png
+│       ├── discount_vs_profit.png
+│       ├── avg_order_segment_channel.png
+│       ├── top_customers.png
+│       └── category_region_matrix.png
+├── schema_diagram.png
+└── README.md
+```
+
+---
+
+## 📊 Tables Overview
+
+### ➤ Fact Table: `fact_sales`
+
+Stores sales metrics and foreign keys to all dimension tables.
+
+* Metrics: `total_sales`, `total_cost`, `profit`, `discount_amount`, `quantity`
+
+### ➤ Dimension Tables
+
+* `dim_customer`: Customer data with segment ID
+* `dim_product`: Product info and category ID
+* `dim_category`: Product category names
+* `dim_location`: Region, city, and state
+* `dim_date`: Includes year, month, quarter
+* `dim_segment`: Customer segment types
+* `dim_order_mode`: Online or In-Store channel
+
+---
+
+## 🛠️ SQL Setup Instructions
+
+1. Launch SQL Server Management Studio
+2. Create database:
+
+```sql
+CREATE DATABASE AceSuperstoreDB;
+GO
+USE AceSuperstoreDB;
+```
+
+3. Run in order:
+
+   * `create_tables.sql`
+   * `populate_dimensions.sql`
+   * `populate_fact_table.sql`
+   * `create_views.sql`
+   * `queries.sql` *(optional reusable queries)*
+
+---
+
+## 🔗 Power BI Setup
+
+1. Open Power BI Desktop
+2. Select **Get Data → SQL Server**
+3. Connect to your SQL Server and choose database `AceSuperstoreDB`
+4. Import only views:
+
+   * `vw_product_seasonality`
+   * `vw_discount_impact_analysis`
+   * `vw_customer_order_patterns`
+   * `vw_channel_margin_report`
+   * `vw_region_category_rankings`
+5. Build visuals using these views
+
+---
+
+## 📈 Power BI Dashboard Visuals
+
+### 1. Product Seasonality Trends
+![Uploading SeasonalTrends.png…]()
+
+View: `vw_product_seasonality`
+
+
+### 2. Discount vs Profit Analysis
+![Uploading DiscountVSProfit.png…]()
+
+View: `vw_discount_impact_analysis`
+
+
+### 3. Avg Order Value by Channel & Segment
+![Uploading ChannelProfitibilityOverview.png…]()
+
+View: `vw_customer_order_patterns`
+
+
+### 4. Top 10 Customers by Profit
+![Uploading CustomerOrderBehaviour.png…]()
+
+View: `vw_customer_order_patterns`
+
+
+### 5. Category Ranking by Region
+![Uploading CategoryRankingsbyRegion.png…]()
+
+View: `vw_region_category_rankings`
+
+---
+
+## 📄 SQL Views Summary
+
+* `vw_product_seasonality`: Product trends over time
+* `vw_discount_impact_analysis`: Relationship between discounts and profits
+* `vw_customer_order_patterns`: Order frequency, AOV, and profit by segment
+* `vw_channel_margin_report`: Online vs In-store profitability
+* `vw_region_category_rankings`: Regional rankings by profit
+
+---
+
+## 🧠 Lessons Learned
+
+* How to design a scalable dimensional model
+* Use of SQL views for performance and abstraction
+* Power BI techniques for storytelling with data
