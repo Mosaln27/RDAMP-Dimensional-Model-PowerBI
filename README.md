@@ -121,7 +121,7 @@ USE AceSuperstoreDB;
 ## 📈 Power BI Dashboard Visuals
 
 ### 1. Product Seasonality Trends
-![Uploading SeasonalTrends.png…]()
+<img width="959" height="539" alt="SeasonalTrends" src="https://github.com/user-attachments/assets/5d1f7497-b0fa-47bb-afb6-c7745c01211e" />
 
 View: `vw_product_seasonality`
 
